@@ -1,0 +1,38 @@
+# Copyright (C) 2009-2016 Internet Neutral Exchange Association Company Limited By Guarantee.
+# All Rights Reserved.
+# 
+# This file is part of IXP Manager.
+# 
+# IXP Manager is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation, version 2.0 of the License.
+# 
+# IXP Manager is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+# more details.
+# 
+# You should have received a copy of the GNU General Public License v2.0
+# along with IXP Manager.  If not, see:
+# 
+# http://www.gnu.org/licenses/gpl-2.0.html
+
+<sql>
+	dbase_type	= mysql
+	dbase_database	= ixpmanagerdatabase
+	dbase_username	= ixpmanagerusername
+	dbase_password	= mys00persekr1tp4ssw0rd
+	dbase_hostname	= localhost
+	#dbase_portname = /tmp/mysql.sock
+</sql>
+
+<ixp>
+	rs_asn = 64513
+	rs_peval_bird = /usr/local/bin/peval-output-to-csv.sh
+	rs_identity = 1
+	sflow_rrdcached = 
+	sflowtool = 
+	sflowtool_opts =
+	sflow_rrddir = 
+#	debug = 1
+</ixp>

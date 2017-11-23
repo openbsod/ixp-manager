@@ -1,0 +1,126 @@
+{
+    "name": "inex/IXP-Manager",
+    "description": "An application by INEX to manage Internet Exchange Points (IXPs) - https://www.ixpmanager.org/",
+    "type": "project",
+    "keywords": ["ixp manager", "ixpm", "inex", "ixp"],
+    "homepage": "https://github.com/inex/IXP-Manager/wiki",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Barry O'Donovan",
+            "email": "barry.odonovan@inex.ie",
+            "homepage": "https://www.ixpmanager.org/"        },
+        {
+            "name": "Nick Hilliard",
+            "email": "nick@inex.ie",
+            "homepage": "https://www.ixpmanager.org/"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/opensolutions/Bootstrap-Zend-Framework"
+        }
+    ],
+    "require": {
+        "php": "7.0.*",
+
+        "zendframework/zendframework1": "~1.12",
+        "komola/bootstrap-zend-framework": "dev-master",
+        "opensolutions/oss-snmp": "dev-master",
+
+        "fideloper/proxy": "~3.3",
+        "laravel/framework": "5.5.*",
+        "laravel/tinker": "~1.0",
+        "laravel-doctrine/orm": "1.4.*",
+        
+        "smarty/smarty": "~3.1",
+        "foil/foil": "~0.6",
+
+        "zendesk/zendesk_api_client_php": "2.*",
+        "guzzlehttp/guzzle": "~6.0",
+        "intervention/image": "^2.3",
+        "anahkiasen/former": "^4.0",
+        "barryvdh/laravel-debugbar": "^2.3",
+        "maxhoffmann/parsedown-laravel": "dev-master",
+        "barryvdh/laravel-dompdf": "^0.8.0",
+        "luketowers/purifier": "~3.0",
+        "php-ds/php-ds": "^1.1",
+        "beberlei/DoctrineExtensions": "^1.0",
+        "laravel-doctrine/extensions": "1.0.*",
+        "graham-campbell/flysystem": "^4.0"
+
+    },
+    "require-dev": {
+        "filp/whoops": "~2.0",
+        "phpunit/phpunit": "~6.0",
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "~1.0",
+        "barryvdh/laravel-ide-helper": "^2.3"
+     },
+    "support": {
+        "issues": "https://www.ixpmanager.org/support.php",
+        "forum": "https://www.inex.ie/mailman/listinfo/ixpmanager",
+        "docs": "http://docs.ixpmanager.org/",
+        "source": "https://github.com/inex/IXP-Manager"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database"
+        ],
+        "psr-0": {
+            "IXP_": "library/",
+            "OSS_": "library/"
+        },
+        "psr-4": {
+             "IXP\\": "app/"
+        },
+        "files": [
+            "app/Support/helpers.php"
+        ]
+     },
+     "autoload-dev": {
+         "classmap": [
+             "tests/TestCase.php"
+         ],
+         "psr-4": {
+             "Tests\\": "tests/"
+         }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ]
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ],
+
+        "post-update-cmd": [
+            "@php artisan clear-compiled",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta --filename=.phpstorm.meta.php/laravel.meta.php"
+        ]
+    },
+    "config": {
+        "config": {
+            "preferred-install": "dist",
+            "sort-packages": true,
+            "optimize-autoloader": true
+        },
+        "platform": {
+            "php": "7.0.10"
+        }
+   },
+   "minimum-stability": "stable"
+}

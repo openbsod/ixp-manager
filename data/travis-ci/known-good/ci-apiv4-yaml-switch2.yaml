@@ -1,0 +1,53 @@
+interfacescust:
+
+  - name: Port-Channel2
+    type: edge
+    description: "HEAnet"
+    dot1q: yes
+    shutdown: no
+    lagindex: 2
+    lagmaster: yes
+    lagmembers:
+          - "GigabitEthernet1"
+    fastlacp: no
+    virtualinterfaceid: 2
+    vlans:
+      - number: 2
+
+  - name: GigabitEthernet1
+    type: edge
+    description: "HEAnet"
+    dot1q: yes
+    shutdown: no
+    autoneg: yes
+    speed: 1000
+    lagindex: 2
+    lagmaster: no
+    fastlacp: no
+    virtualinterfaceid: 2
+    vlans:
+      - number: 2
+
+  - name: GigabitEthernet6
+    type: edge
+    description: "AS112"
+    dot1q: no
+    shutdown: no
+    autoneg: yes
+    speed: 10
+    virtualinterfaceid: 5
+    vlans:
+      - number: 2
+
+  - name: GigabitEthernet8
+    type: edge
+    description: "Imagine"
+    dot1q: no
+    shutdown: no
+    autoneg: yes
+    speed: 10000
+    virtualinterfaceid: 7
+    vlans:
+      - number: 2
+
+

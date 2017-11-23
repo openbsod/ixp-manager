@@ -1,0 +1,98 @@
+
+Potential Todo / Feature Ideas
+------------------------------
+
+* API - "another thing that could potentially be useful.. the way you
+  generate RIR objects.. if members could generate their macro and maybe
+  import/exports based on the data route servers receive this could be
+  useful.. especially keeping import/exports up to date with a lot of
+  peering is a major pain.."
+
+* "the peer2peer stats page does not scale well for networks with many peers.
+  I think it could be an idea to make it configurable if you want the
+  actual graphs or just a list where you can select which graphs you would
+  like to see in one view"
+
+* <nick-2128> you know what would be incredibly useful? an ixpmanager.php
+  file which bleated about whether the correct modules are installed or not
+
+* Review MRTG script for reseller and fanout ports
+
+* Fix static documentation to allow for auth. See StaticController::__call()
+
+* INEX require that members peer "with at least the greater of 4 other
+  Members, or 10% of other Members". A tool to list members failing this
+  requirement would be useful.
+
+* Email members on >80% of port utilisation
+
+* Show who a member peers with (or not) on the overview page
+
+* Show if a member is on the route server or not
+
+* Member audit - port states, errors / discards, route collector session
+  status, route server session status, etc.
+
+
+* Go through application/config/application.ini.dist and fix FIXMEs and add new
+  documentation where indicated
+
+* Would be useful to display last login information in the user edit screen or
+  the list of users. Also the created by, last updated date?
+
+* Member field for "MD5 Required" with values: "No", "Yes - mandatory",
+  "Yes - on request", "Unknown"
+
+* Show per-member peering matrix on member overview page?
+
+* Member health report
+
+* Allow member to modify template that Request Peering email is populated
+  with when sending invite using "Peering Manager". Ideally there could be a
+  list of predefined variables available that could be used while templating
+  email (ie. peer name, peer ASN, own name, own ASN, own WWW, common peering
+  LAN IPs, AS MACRO, peering email, NOC email and so on), so member could
+  create own template using above variables + own text.
+
+  Also consider adding maxprefixes to peering manager template (see #174).
+
+
+* Add integrated PeeringDB functionality via access to:
+  mysql -h mysql.peeringdb.com
+
+* Add PeeringDB link to PM request template
+
+* Update suggested prefix limit / real prefix limit based on IRRDB entries?
+
+* Tool to plug data into EURO-IX database
+
+* Add "Abbrieviated Name" to schema for titles in, e.g., p2p graphs
+
+* Add ASN to graph titles
+
+* Multiple P2P graphs for LAG ports
+
+* "hose that you have bilateral peerings with is the difference between the
+  'Peers' tab and the 'Potential Bilateral Peers' tab. But I'll add a note
+  to add a tab that also shows this."
+
+
+* Maintenance Announcements / Diary  -was issue #30.
+  * Page for upcoming scheduled maintenance
+  * Select affected switches and generate a list of affected members (Name,
+    ASN, IPv4, IPv6 addresses)
+  * Add notification when members login, especially affected members, link
+    to maintenance pages.
+
+* Have a "private" directory analogous to the "public" one,with files only
+  loadable by logged in users. See issue #71.
+
+* Per location member statistics graphs to show all member traffic is a
+  specific location - see issue #204
+
+* An annual (or more frequent?) email to members reminding them of their
+  subscriptions. Also email to custadmins reminding them of their users.
+  Probably staggered over the year to prevent a flux of inbound emails.
+
+* I'd like to see the ability to do bulk modification (likely just deletion) 
+  to IP addresses, ie: selecting a group of ten and deleting them # 296

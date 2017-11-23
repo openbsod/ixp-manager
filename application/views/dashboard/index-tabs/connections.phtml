@@ -1,0 +1,7 @@
+
+{if $resellerMode && $cust->isReseller()}
+    {tmplinclude file="customer/overview-tabs/reseller-ports.phtml"}
+{else}
+    {tmplinclude file="customer/overview-tabs/ports.phtml"}
+{/if}
+

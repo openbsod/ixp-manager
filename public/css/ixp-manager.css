@@ -1,0 +1,594 @@
+@CHARSET "UTF-8";
+
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+@media ( max-width: 1245px ) {
+    body {
+        padding-top: 100px;
+    }
+}
+
+.container > footer {
+  padding-top: 30px;
+}
+
+.container-fluid > footer {
+  padding-top: 30px;
+}
+
+
+.sidebar-nav {
+    /* fix sidebar nav issue boostrap 2 => 3 */
+
+    padding: 9px 0;
+    max-width: px;
+
+}
+
+.sidebar-nav .nav {
+    padding : 0px 15px 0px 15px;
+
+}
+
+.left-sidebar li a{
+    border-radius: 0px;
+}
+
+.left-sidebar li.active a, .left-sidebar li a{
+    padding-left: 15px !important;
+    border-right-width: 15px;
+    padding-right: 15px !important;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.menu-search-input{
+    height: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.menu-search-help-btn{
+    padding: 2px 10px;
+    font-size: 11.9px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height : 26px;
+}
+
+.menu-search-help-btn .glyphicon-question-sign{
+    margin-top: 4px;
+}
+
+.sidebar-search-form{
+    margin-bottom: 20px;
+}
+
+.left-sidebar .nav-stacked .nav-header{
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #999999;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    margin-top: 9px;
+}
+
+.padding20LR{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav-stacked li.sub-menu{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.left-sidebar .nav-stacked li{
+    line-height: 20px;
+    height : 26px;
+    margin-top: 0px;
+}
+
+.left-sidebar .nav-stacked li a{
+    padding: 3px 0 3px 0;
+}
+
+.no-padding{
+    padding: 0!important;
+}
+
+.padding-10{
+    padding: 10px 15px!important;
+}
+
+nav.navbar.navbar-inverse.navbar-fixed-top, nav.navbar.navbar-inverse.navbar-fixed-top > div.container-fluid, nav.navbar.navbar-inverse.navbar-fixed-top > div.container-fluid > div.navbar-header{
+    min-height: 41px;
+    height: 41px;
+}
+
+nav.navbar.navbar-inverse.navbar-fixed-top .navbar-brand{
+    display: block;
+    float: left;
+    padding: 10px 20px 10px;
+    margin-left: -20px;
+    font-size: 20px;
+    font-weight: 200;
+    height:41px;
+}
+
+
+nav.navbar.navbar-inverse.navbar-fixed-top .collapse.navbar-collapse li a{
+    height : 41px !important;
+    padding: 10px 20px 10px;
+}
+
+.breadcrumb-btn-group #dropdownMenu1, .breadcrumb-btn-group  .btn.btn-default{
+    height: 22px;
+    font-size: 10.5px;
+    padding-top: 3px;
+}
+
+.mono {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    /* font-size: 12px; */
+}
+
+
+
+
+.ixpm-select-input-xs {
+    height: 20px;
+    line-height: 20px;
+}
+
+
+
+
+
+.reset-button-well{
+    float: right;
+    position: absolute;
+    margin-left: 55%;
+}
+
+.container > footer p {
+  text-align: center; /* center align it with the container */
+}
+
+.container-fluid > footer p {
+  text-align: center; /* center align it with the container */
+}
+
+/* The white background content wrapper */
+.page-content {
+  background-color: #fff !important;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+
+/* Page header tweaks */
+.page-header {
+  background-color: #f5f5f5;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+}
+
+/*
+.topbar .btn {
+  border: 0;
+}*/
+
+
+
+
+
+.oss-overlay
+{
+    position: absolute;
+    z-index: 2000;
+    background-color:black;
+    opacity: 0.4;
+}
+
+a.aplain, a:link.aplain, a:visited.aplain, a:hover.aplain, a:active.aplain {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.list_preamble_container {
+    display: block;
+}
+
+.list_preamble {
+    display: block;
+    text-align: right;
+}
+
+
+
+
+
+
+.pm-table {
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.pm-table th {
+    padding: 0px;
+    text-align: center;
+    vertical-align: bottom;
+    border: 1px solid #dddddd;
+    border-bottom-width: 2px;
+    border-top: none;
+    font-weight: bold;
+}
+
+.pm-table th.asn {
+    cursor: hand;
+    cursor: pointer;
+}
+
+.pm-table th:last-child {
+    border-right-width: 2px;
+}
+
+.pm-table td {
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #dddddd;
+}
+
+.pm-table td.peering {
+     cursor: hand;
+     cursor: pointer;
+}
+
+.pm-table td.zoom1 {
+    padding: 0px 1px;
+    font-size: 8px;
+    line-height: 12px;
+}
+
+.pm-table td.zoom2 {
+    padding: 2px 4px;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.pm-table td.zoom3 {
+    padding: 4px 8px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.pm-table td.zoom4 {
+    padding: 6px 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.pm-table td.zoom5 {
+    padding: 8px 12px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.pm-table th.zoom1 {
+    font-size: 8px;
+    line-height: 12px;
+}
+
+.pm-table th.zoom2 {
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.pm-table th.zoom3 {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.pm-table th.zoom4 {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.pm-table th.zoom5 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.pm-table td:last-child {
+    border-right-width: 2px;
+}
+
+
+
+.pm-table th.name {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.pm-table th.asn {
+    border-left: none;
+    border-top: none;
+    border-right-width: 2px;
+}
+
+.pm-table td.name {
+    text-align: left;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+}
+
+.pm-table td.asn {
+    text-align: right;
+    border-left: none;
+    border-right-width: 2px;
+    font-weight: bold;
+}
+
+.pm-table tr:last-child {
+    border-bottom-width: 2px;
+}
+
+
+.pm-table td.peered {
+    background-color: #00cc00;
+    width: 10px;
+}
+
+.pm-table td.not-peered {
+    background-color: #d63030;
+    width: 10px;
+}
+
+.pm-table td.bilateral-rs {
+    width: 10px;
+}
+
+.pm-table td.rs-only {
+    width: 10px;
+}
+
+.pm-table td.bilateral-only {
+    width: 10px;
+}
+
+
+.pm-table tr.hover, .pm-table colgroup.hover, .pm-table td.hover {
+    background-color: #eee;
+    border-left: 2px solid #555;
+    border-right: 2px solid #555;
+}
+
+.pm-table td.hover2 {
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+}
+
+
+.pm-table th.highlight, .pm-table td.highlight {
+    background-color: #fcf6cf;
+}
+
+.pm-table th.highlight2, .pm-table td.highlight2 {
+    background-color: #eee;
+}
+
+.controls-fieldset-bordered {
+    margin-left: 90px;
+}
+
+.legend-fieldset-bordered {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    border-style: none none none;
+    width: none;
+    padding: 5px;
+}
+
+.fieldset-bordered {
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    border-radius: 4px 4px 4px 4px;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+.info_box {
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+
+.info_box .title {
+    position: relative;
+    top: -30px;
+    margin-left: 0em;
+    padding: 2px 7px;
+    display: inline;
+    font-size: 1em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    background-color: #fafafa;
+    background-color: #f9f9f9;
+    background-image: -moz-linear-gradient( top, #ffffff, #f0f0f0 );
+    background-image: -webkit-gradient( linear, 0 0, 0 100%, from(#ffffff), to(#f0f0f0) );
+    background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0);
+    background-image: -o-linear-gradient(top, #ffffff, #f0f0f0);
+    background-image: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff0f0f0', GradientType=0);
+}
+
+.info_box .title a{
+    color:#555555;
+    text-decoration:none;
+}
+.info_box .content{
+    margin-top:-10px;
+}
+
+
+/* Bootstrap Dropdowns in Breadcrumbs:
+       http://stackoverflow.com/questions/12194573/bootstrap-dropdown-within-breadcrumb */
+.dropdown-menu li {
+  display: block;
+}
+
+
+.www80-padding {
+    padding: 5px;
+}
+
+
+/* Chosen width issues: https://github.com/harvesthq/chosen/issues/92
+
+.chzn-container, .chzn-drop {
+    width: 100% !important;
+}
+
+*/
+
+
+.panel.with-nav-tabs .panel-heading{
+    padding: 5px 5px 0 5px;
+}
+.panel.with-nav-tabs .nav-tabs{
+    border-bottom: none;
+}
+.panel.with-nav-tabs .nav-justified{
+    margin-bottom: -1px;
+}
+/********************************************************************/
+/*** PANEL DEFAULT ***/
+.with-nav-tabs.panel-default .nav-tabs > li > a,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    color: #777;
+}
+
+.table_view_info{
+    border-collapse: separate;
+    border-spacing: 15px 15px;
+}
+
+.table_view_info tr td{
+    vertical-align: top;
+}
+
+
+
+
+.droppable {
+    border: #ccc 1px solid;
+    border-radius: 8px;
+    background: #eee;
+    color: #666;
+    padding: 20px;
+    margin: 10px;
+    clear: both;
+    text-align: center;
+}
+
+.droppable.hover {
+    background: #ddd;
+}
+
+.uploadList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.uploadItem {
+    overflow: hidden;
+    border-bottom: #BCBCBC 1px solid;
+    margin: 0 20px;
+    padding: 3px;
+}
+
+.uploadItem span {
+    overflow: hidden;
+    width: 150px;
+    float: left;
+    display: block;
+}
+
+a.addInputRow,
+a.delInputRow,
+.uploadItem a {
+    display: inline-block;
+    background: url(add.png) no-repeat;
+    height: 16px;
+    width: 16px;
+    text-indent: -999px;
+}
+
+.uploadItem a {
+    float: left;
+    display: block;
+    padding-left: 20px;
+    background-image: url(delete.png);
+}
+
+a.delInputRow {
+    background-image: url(delete.png);
+}
+
+.progress {
+    margin: 5px 0;
+    height: 15px;
+    border-radius: 3px;
+    background: #545A74;
+}
+
+.upperCase {
+    text-transform:uppercase;
+}
+
+.lowerCase {
+    text-transform:lowercase;
+}
+
+.dropdown-submenu {
+    position: relative !important;
+}
+
+.dropdown-submenu .dropdown-menu-l {
+    top: 0;
+    left: -163px;
+    margin-top: -1px;
+}
+
+td a:hover{
+    text-decoration: none;
+}
+
+
+.help-block {
+    display: none;
+}
