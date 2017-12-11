@@ -6,6 +6,8 @@ and especially new and small IXPs looking to expand.
 
 [![Build Status](https://travis-ci.org/inex/IXP-Manager.png?branch=master)](https://travis-ci.org/inex/IXP-Manager) - courtesy of [Travis CI](https://travis-ci.org/inex/IXP-Manager).
 
+![alt text](https://github.com/openbsod/ixp-manager/blob/master/ixp.png)
+
 ## Main Links
 
 * [IXP Manager Website](https://www.ixpmanager.org)
